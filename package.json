@@ -1,0 +1,29 @@
+{
+  "name": "vk-bridge-sdk",
+  "version": "1.0.0",
+  "main": "dist/vk-bridge-sdk.js",
+  "module": "dist/vk-bridge-sdk.es.js",
+  "jsnext:main": "dist/vk-bridge-sdk.es.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "rollup -c -w",
+    "build": "rollup -c",
+    "lint": "eslint src/**/* --ext .ts --fix"
+  },
+  "dependencies": {
+    "@vkontakte/vk-bridge": "^2.2.0"
+  },
+  "peerDependencies": {
+    "@vkontakte/vk-bridge": "^2.2.0"
+  },
+  "devDependencies": {
+    "rollup": "^2.7.6",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-peer-deps-external": "^2.2.2",
+    "rollup-plugin-terser": "^5.3.0",
+    "rollup-plugin-typescript2": "^0.27.0",
+    "typescript": "^3.8.3"
+  }
+}
