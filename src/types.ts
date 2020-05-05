@@ -1,0 +1,1 @@
+export type EntitiesObject<T> = { [index: string]: T };
